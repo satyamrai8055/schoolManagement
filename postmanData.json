@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "50afdeac-0f75-4c88-b6e4-9c377f0296a2",
+		"name": "schoolManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27049966",
+		"_collection_link": "https://lively-moon-135670.postman.co/workspace/e8df30ad-c9ab-4632-890d-df65ecc9d33b/collection/27049966-50afdeac-0f75-4c88-b6e4-9c377f0296a2?action=share&source=collection_link&creator=27049966"
+	},
+	"item": [
+		{
+			"name": "registerStudent",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"shivani\",\r\n    \"password\": \"123455\",\r\n    \"email\": \"shivaniNagar38@gmail.com\",\r\n    \"role\": \"student\",\r\n    \"profilePicture\": \"https://example.com/image.jpg\",\r\n    \"firstName\": \"shivani\",\r\n    \"lastName\": \"Nagar\",\r\n    \"contactInfo\": \"9876543211\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1574/api/v1/registerStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1574",
+					"path": [
+						"api",
+						"v1",
+						"registerStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studentLogin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"userName\": \"satyamRai\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"shivaniNagar382@gmail.com\"\r\n    // \"role\": \"admin\",\r\n    // \"profilePicture\": \"https://example.com/image.jpg\",\r\n    // \"firstName\": \"Satyam\",\r\n    // \"lastName\": \"Rai\",\r\n    // \"contactInfo\": \"9580683951\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1574/api/v1/studentLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1574",
+					"path": [
+						"api",
+						"v1",
+						"studentLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProfileById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2ViZjVjZmM2MzY0NjE1NmIyNjNkMzIiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3NDM1MjI1NDUsImV4cCI6MTc0MzYwODk0NX0.Of9uAj9YijYlwvUX_8IuzuaZtXipFngzaw2EiH68l90",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"userName\": \"satyamRai\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"satyamrai382@gmail.com\"\r\n    // \"role\": \"admin\",\r\n    // \"profilePicture\": \"https://example.com/image.jpg\",\r\n    // \"firstName\": \"Satyam\",\r\n    // \"lastName\": \"Rai\",\r\n    // \"contactInfo\": \"9580683951\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1574/api/v1/getProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1574",
+					"path": [
+						"api",
+						"v1",
+						"getProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProfileAllStudent",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2ViZjVjZmM2MzY0NjE1NmIyNjNkMzIiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3NDM1MjI1NDUsImV4cCI6MTc0MzYwODk0NX0.Of9uAj9YijYlwvUX_8IuzuaZtXipFngzaw2EiH68l90",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"userName\": \"satyamRai\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"satyamrai382@gmail.com\"\r\n    // \"role\": \"admin\",\r\n    // \"profilePicture\": \"https://example.com/image.jpg\",\r\n    // \"firstName\": \"Satyam\",\r\n    // \"lastName\": \"Rai\",\r\n    // \"contactInfo\": \"9580683951\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1574/api/v1/getProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1574",
+					"path": [
+						"api",
+						"v1",
+						"getProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStudent",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2ViZjVjZmM2MzY0NjE1NmIyNjNkMzIiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3NDM1MjI1NDUsImV4cCI6MTc0MzYwODk0NX0.Of9uAj9YijYlwvUX_8IuzuaZtXipFngzaw2EiH68l90",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"userName\": \"satyamRai\",\r\n    // \"password\": \"123456\",\r\n    \"email\": \"satyamrai312@gmail.com\",\r\n    // \"role\": \"admin\",\r\n    // \"profilePicture\": \"https://example.com/image.jpg\",\r\n    // \"firstName\": \"Satyam\",\r\n    // \"lastName\": \"Rai\",\r\n    \"contactInfo\": \"9580683991\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1574/api/v1/updateStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1574",
+					"path": [
+						"api",
+						"v1",
+						"updateStudent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
